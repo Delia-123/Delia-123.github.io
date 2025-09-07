@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="一、将本地 PDF 文件上传至 github，转化为 jsDelivr CDN 链接，并保留 URL 编码格式：https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;Delia-123&#x2F;pdfFiles@4a8321a63d8a192e60fa52b028d7b45b9efeec18&#x2F;2024%E5%B9%B4%E5%AD%A6%E7%94%9FIT%E6%89%8B%E5%86%8C.pdf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pdf2md_code">
+<meta property="og:url" content="http://example.com/2025/09/07/pdf2md-code/index.html">
+<meta property="og:site_name" content="My Blog Site">
+<meta property="og:description" content="一、将本地 PDF 文件上传至 github，转化为 jsDelivr CDN 链接，并保留 URL 编码格式：https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;Delia-123&#x2F;pdfFiles@4a8321a63d8a192e60fa52b028d7b45b9efeec18&#x2F;2024%E5%B9%B4%E5%AD%A6%E7%94%9FIT%E6%89%8B%E5%86%8C.pdf">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-09-07T04:23:02.000Z">
+<meta property="article:modified_time" content="2025-09-07T04:27:11.422Z">
+<meta property="article:author" content="Qin Weiya">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>pdf2md_code</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/Delia-123">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2025/09/07/MinerU-Markdown/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2025/09/07/pdf2md-code/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2025/09/07/pdf2md-code/&text=pdf2md_code"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2025/09/07/pdf2md-code/&is_video=false&description=pdf2md_code"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=pdf2md_code&body=Check out this article: http://example.com/2025/09/07/pdf2md-code/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2025/09/07/pdf2md-code/&name=pdf2md_code&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%B0%86%E6%9C%AC%E5%9C%B0-PDF-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%87%B3-github%EF%BC%8C%E8%BD%AC%E5%8C%96%E4%B8%BA-jsDelivr-CDN-%E9%93%BE%E6%8E%A5%EF%BC%8C%E5%B9%B6%E4%BF%9D%E7%95%99-URL-%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">一、将本地 PDF 文件上传至 github，转化为 jsDelivr CDN 链接，并保留 URL 编码格式：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%B0%83%E7%94%A8-MinerU-API"><span class="toc-number">2.</span> <span class="toc-text">二、调用 MinerU API</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        pdf2md_code
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">My Blog Site</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2025-09-07T04:23:02.000Z" itemprop="datePublished">2025-09-07</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="一、将本地-PDF-文件上传至-github，转化为-jsDelivr-CDN-链接，并保留-URL-编码格式："><a href="#一、将本地-PDF-文件上传至-github，转化为-jsDelivr-CDN-链接，并保留-URL-编码格式：" class="headerlink" title="一、将本地 PDF 文件上传至 github，转化为 jsDelivr CDN 链接，并保留 URL 编码格式："></a>一、将本地 PDF 文件上传至 github，转化为 jsDelivr CDN 链接，并保留 URL 编码格式：</h2><p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Delia-123/pdfFiles@4a8321a63d8a192e60fa52b028d7b45b9efeec18/2024%E5%B9%B4%E5%AD%A6%E7%94%9FIT%E6%89%8B%E5%86%8C.pdf">https://cdn.jsdelivr.net/gh/Delia-123/pdfFiles@4a8321a63d8a192e60fa52b028d7b45b9efeec18/2024%E5%B9%B4%E5%AD%A6%E7%94%9FIT%E6%89%8B%E5%86%8C.pdf</a></p>
+<h2 id="二、调用-MinerU-API"><a href="#二、调用-MinerU-API" class="headerlink" title="二、调用 MinerU API"></a>二、调用 MinerU API</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment">#解析文件</span></span><br><span class="line">token = <span class="string">&quot;my mineru token&quot;</span></span><br><span class="line">url = <span class="string">&quot;https://mineru.net/api/v4/extract/task&quot;</span></span><br><span class="line">header = &#123;</span><br><span class="line"><span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/json&quot;</span>,</span><br><span class="line"><span class="string">&quot;Authorization&quot;</span>: <span class="string">f&quot;Bearer <span class="subst">&#123;token&#125;</span>&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">data = &#123;</span><br><span class="line"><span class="string">&quot;url&quot;</span>: <span class="string">&quot;https://cdn.jsdelivr.net/gh/Delia-123/pdfFiles@4a8321a63d8a192e60fa52b028d7b45b9efeec18/2024%E5%B9%B4%E5%AD%A6%E7%94%9FIT%E6%89%8B%E5%86%8C.pdf&quot;</span>,</span><br><span class="line"><span class="string">&quot;is_ocr&quot;</span>: <span class="literal">True</span>,</span><br><span class="line"><span class="string">&quot;enable_formula&quot;</span>: <span class="literal">False</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">res = requests.post(url,headers=header,json=data)</span><br><span class="line"><span class="built_in">print</span>(res.status_code)</span><br><span class="line"><span class="built_in">print</span>(res.json())</span><br><span class="line"><span class="built_in">print</span>(res.json()[<span class="string">&quot;data&quot;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">#获取解析结果</span></span><br><span class="line">url = <span class="string">f&quot;https://mineru.net/api/v4/extract/task/<span class="subst">&#123;res.json()[<span class="string">&quot;data&quot;</span>][<span class="string">&quot;task_id&quot;</span>]&#125;</span>&quot;</span></span><br><span class="line">max_attempts = <span class="number">30</span> <span class="comment"># 最大尝试次数</span></span><br><span class="line">wait_time = <span class="number">2</span> <span class="comment"># 每次等待的秒数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> attempt <span class="keyword">in</span> <span class="built_in">range</span>(max_attempts):</span><br><span class="line">res = requests.get(url, headers=header)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">        data = res.json()</span><br><span class="line">        state = data[<span class="string">&quot;data&quot;</span>][<span class="string">&quot;state&quot;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;检查状态 (尝试 <span class="subst">&#123;attempt + <span class="number">1</span>&#125;</span>/<span class="subst">&#123;max_attempts&#125;</span>): <span class="subst">&#123;state&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> state != <span class="string">&quot;pending&quot;</span>:</span><br><span class="line">            <span class="keyword">if</span> state == <span class="string">&quot;success&quot;</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;任务完成!&quot;</span>)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;最终结果:&quot;</span>, data[<span class="string">&quot;data&quot;</span>])</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">f&quot;任务状态异常: <span class="subst">&#123;state&#125;</span>&quot;</span>)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;详细信息:&quot;</span>, data)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果还是pending，等待一段时间再重试</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&quot;任务处理中，等待 <span class="subst">&#123;wait_time&#125;</span> 秒后重试...&quot;</span>)</span><br><span class="line">            time.sleep(wait_time)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;请求失败，状态码: <span class="subst">&#123;res.status_code&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;响应:&quot;</span>, res.text)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;经过 <span class="subst">&#123;max_attempts&#125;</span> 次尝试后任务仍未完成，请稍后再试或联系支持&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/Delia-123">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%B0%86%E6%9C%AC%E5%9C%B0-PDF-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%87%B3-github%EF%BC%8C%E8%BD%AC%E5%8C%96%E4%B8%BA-jsDelivr-CDN-%E9%93%BE%E6%8E%A5%EF%BC%8C%E5%B9%B6%E4%BF%9D%E7%95%99-URL-%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">一、将本地 PDF 文件上传至 github，转化为 jsDelivr CDN 链接，并保留 URL 编码格式：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%B0%83%E7%94%A8-MinerU-API"><span class="toc-number">2.</span> <span class="toc-text">二、调用 MinerU API</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2025/09/07/pdf2md-code/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2025/09/07/pdf2md-code/&text=pdf2md_code"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2025/09/07/pdf2md-code/&is_video=false&description=pdf2md_code"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=pdf2md_code&body=Check out this article: http://example.com/2025/09/07/pdf2md-code/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2025/09/07/pdf2md-code/&title=pdf2md_code"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2025/09/07/pdf2md-code/&name=pdf2md_code&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2025 Qin Weiya
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/Delia-123">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-37473492-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
